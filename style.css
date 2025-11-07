@@ -74,9 +74,8 @@ nav{
     display: flex;
     flex-direction: column;
 }
-.flex-wrap{
-    flex-wrap: wrap;
-}
+
+
 .w-100{
     width: 100%;
 }
@@ -107,9 +106,7 @@ nav{
 .pb-240{
     padding-bottom: 240px;
 }
-.pb--160{
-    padding-bottom: -160px;
-}
+
 
 .color-orange{
     color: rgb(255, 110, 6);

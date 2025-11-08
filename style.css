@@ -457,7 +457,7 @@ select{
     object-fit: cover;
     background-image: url("background/New-official-website_v2_form_background.png");
     background-size: cover;
-    background-position: top center;
+    background-position: center;
     background-repeat: no-repeat;
     padding-bottom: 40px;
 }
@@ -481,7 +481,7 @@ footer h3{
     font-size: 12px;
     color: rgb(227, 230, 237);
     border-bottom: 20px;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 footer p{
     color: rgb(227, 230, 237);
@@ -561,11 +561,50 @@ address{
 .official{
     display: flex;
     flex-direction: row;
+    gap: 24px;
 }
-.official svg{
+/* .official img svg{
     width: 44px;
     color: rgb(158, 166, 183);
 }
-.official svg:hover{
+.official img svg:hover{
     color: rgb(255, 110, 6);
+} */
+
+.facebook{
+    width: 21px;
+    height: 21px;
+    background-image: url(img/official/facebook.svg);
+    background-repeat: no-repeat;
+}
+.instagram{
+    width: 21px;
+    height: 21px;
+    background-image: url(img/official/instagram.svg);
+    background-repeat: no-repeat;
+}
+.youtube{
+    width: 21px;
+    height: 21px;
+    background-image: url(img/official/youtube.svg);
+    background-repeat: no-repeat;
+}
+.medium{
+    width: 21px;
+    height: 21px;
+    background-image: url(img/official/medium.svg);
+    background-repeat: no-repeat;
+}
+
+.facebook:hover{
+    background-image: url(img/official/facebook_hover.svg);
+}
+.instagram:hover{
+    background-image: url(img/official/instagram_hover.svg);
+}
+.youtube:hover{
+    background-image: url(img/official/youtube_hover.svg);
+}
+.medium:hover{
+    background-image: url(img/official/medium_hover.svg);
 }

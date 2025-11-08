@@ -552,6 +552,7 @@ address{
 .official{
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 24px;
 }
 /* .official img svg{

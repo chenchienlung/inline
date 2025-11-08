@@ -2,15 +2,6 @@ body{
     font-family: "Noto Sans Japanese-Normal", sans-serif;
 }
 
-header{
-    height: 90px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    background-color: #fff;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .15);
-}
-
 a{
     text-decoration: none;
     line-height: 30.4px;
@@ -20,6 +11,104 @@ p{
     line-height: 30.4px;
 }
 
+.container{
+    width: 1160px;
+    margin: 0 auto;
+    flex-shrink: 0;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.w-100{
+    width: 100%;
+}
+.mt-40{
+    margin-top: 40px;
+}
+.mb-100{
+    margin-bottom: 100px;
+}
+.pb-200{
+    padding-bottom: 200px;
+}
+
+
+.color-orange{
+    color: rgb(255, 110, 6);
+}
+.color-dark{
+    color: rgb(37, 41, 50);
+}
+.color-red{
+    color: rgb(255, 0, 0);
+}
+
+h2{
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 80px;
+    font-family: "arial black", impact, sans-serif;
+}
+
+.section-text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.strong-26{
+    font-size: 26px;
+    line-height: 50.7px;
+    font-weight: 700;
+    color: rgb(236, 99, 0);
+    margin-bottom: 40px;
+}
+.strong-30{
+    font-size: 30px;
+    line-height: 55.7px;
+    font-weight: 700;
+    color: rgb(255, 102, 0);
+    margin: 40px 0;
+}
+.strong-32{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+.fs-20{
+    font-size: 20px;
+}
+
+.fw-700{
+    font-weight: 700;
+}
+.fw-400{
+    font-weight: 400;
+}
+
+.icon{
+    width: 44px;
+    height: 44px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+
+/* header */
+header{
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .15);
+}
 nav{
     max-width: 1160px;
     min-width: 960px;
@@ -48,9 +137,13 @@ nav{
     flex-direction: row;
     align-items: center;
     gap: 8px;
+    cursor: pointer;
 }
 .btn-red img{
     height: 40px;
+}
+.btn-red:hover{
+    box-shadow: 0 0 12px 8px rgba(0, 0, 0, .25);
 }
 .nav-item{
     padding: 24px 12px;
@@ -62,97 +155,10 @@ nav{
 .nav-item:hover{
     color: rgb(255, 110, 6);
 }
-
 .space{
     margin-top: 90px;
 }
 
-.flex-row{
-    display: flex;
-    flex-direction: row;
-}
-.flex-column{
-    display: flex;
-    flex-direction: column;
-}
-
-
-.w-100{
-    width: 100%;
-}
-.mt-40{
-    margin-top: 40px;
-}
-.mt-80{
-    margin-top: 80px;
-}
-.mb-40{
-    margin-bottom: 40px;
-}
-.mb-60{
-    margin-bottom: 60px;
-}
-.mb-100{
-    margin-bottom: 100px;
-}
-.pb-240{
-    padding-bottom: 240px;
-}
-
-
-.color-orange{
-    color: rgb(255, 110, 6);
-}
-.color-blue{
-    color: rgb(6, 76, 140);
-}
-.color-darkblue{
-    color: rgb(0, 0, 128);
-}
-.color-dark{
-    color: rgb(37, 41, 50);
-}
-.color-red{
-    color: rgb(255, 0, 0);
-}
-.color-white{
-    color: #fff;
-}
-
-h2{
-    font-size: 44px;
-    font-weight: 700;
-    margin-bottom: 80px;
-    font-family: "arial black", impact, sans-serif;
-}
-
-.fs-32{
-    font-size: 32px;
-}
-.fs-20{
-    font-size: 20px;
-}
-.fs-24{
-    font-size: 24px;
-}
-
-.fw-700{
-    font-weight: 700;
-}
-.fw-400{
-    font-weight: 400;
-}
-
-.text-nowrap{
-    text-wrap: nowrap;
-}
-
-.icon{
-    width: 44px;
-    height: 44px;
-    object-fit: cover;
-    margin-right: 20px;
-}
 
 /* banner */
 .banner{
@@ -187,11 +193,7 @@ h2{
     background-repeat: no-repeat;
 }
 
-.container{
-    width: 1160px;
-    margin: 0 auto;
-    flex-shrink: 0;
-}
+
 
 /* world-map */
 .world-img{
@@ -209,18 +211,18 @@ h2{
     padding-top: 120px;
 }
 
-.section-text{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
 
 /* intro */
-.intro{
+.intro-section{
     display: flex;
     flex-direction: row;
-    align-items: stretch;
+    align-items: center;
+    gap: 40px;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
 }
 .intro-title{
     font-size: 22px;
@@ -230,18 +232,17 @@ h2{
     padding-left: 64px;
 }
 .intro-text{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     color: rgb(37, 41, 50);
     margin-bottom: 10px;
 }
 
 
-
 /* partner */
-.partner-title{
-    margin-top: 100px;
-    margin-bottom: 100px;
+.partner{
+    margin-top: 60px;
+    margin-bottom: 120px;
     font-size: 28px;
     font-weight: 700;
     color: rgb(37, 41, 50);
@@ -295,6 +296,7 @@ h2{
     width: 190px;
     transform: matrix(1.1);
 }
+
 
 /* form */
 .form-container{
@@ -363,12 +365,20 @@ select{
     color: rgb(37, 41, 50);
 }
 
+
+/* more&try */
 .more{
     padding: 80px 0;
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 120px;
+}
+.more-title{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 60.8px;
+    color: rgb(37, 41, 50);
+    margin-bottom: 60px;
 }
 .more-btn{
     padding: 20px 30px;
@@ -379,18 +389,14 @@ select{
     background-color: rgb(6, 76, 140);
     color: #fff;
 }
-
 .try{
-    width: 1160px;
-    margin: 0 auto;
-    flex-shrink: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 .try-title{
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 700;
     color: rgb(51, 51, 51);
     margin-bottom: 20px;
@@ -406,7 +412,6 @@ select{
     font-weight: 700;
     color: rgb(37, 41, 50);
 }
-
 .try-content{
     width: 100%;
     margin-top: 40px;
@@ -414,10 +419,10 @@ select{
 }
 .try-btn{
     padding: 12px 20px;
-    background-color: rgb(255, 110, 6);
+    background-color: rgb(236, 99, 55);
     color: #fff;
     font-size: 13px;
-    font-weight: 700;
+    font-weight: 400;
     border-radius: 10px;
 }
 .border-left{
@@ -443,6 +448,10 @@ select{
     background-repeat: no-repeat;
     background-size: 100%;
     padding-top: 80px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
 }
 .bottom-bg-img{
     object-fit: cover;
@@ -470,7 +479,9 @@ footer{
     gap: 40px;
 }
 footer h3{
-    font-size: 12px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: normal;
     color: rgb(227, 230, 237);
     border-bottom: 20px;
     margin-bottom: 20px;
@@ -498,12 +509,14 @@ footer li a:hover{
 }
 .country{
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 700;
+    color: rgb(227, 230, 237);
     margin-bottom: 14px;
 }
 address{
     font-size: 12px;
-    text-wrap: wrap;
+    font-weight: 400;
+    line-height: 13.5px;
     color: rgb(227, 230, 237);
 }
 .contact{

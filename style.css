@@ -37,12 +37,13 @@ nav{
     align-items: center;
 }
 .btn-red{
-    padding: 2px 60px 2px 30px;
-    background-color: #DA3743;
+    padding: 0 40px 0 20px;
+    margin-left: 24px;
+    background-color: rgb(236, 5, 61);
     border-radius: 100px;
     color: #fff;
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 400;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -55,7 +56,7 @@ nav{
     padding: 24px 12px;
     height: 100%;
     text-decoration: none;
-    color: rgb(80, 85, 99);
+    color: #505563;
     font-weight: 400;
 }
 .nav-item:hover{
@@ -102,6 +103,12 @@ nav{
 }
 .mb-100{
     margin-bottom: 100px;
+}
+.pt-40{
+    padding-top: 40px;
+}
+.pb-40{
+    padding-bottom: 40px;
 }
 .pb-240{
     padding-bottom: 240px;
@@ -175,7 +182,7 @@ h2{
 }
 .banner-text{
     text-wrap: nowrap;
-    padding-top: 60px;
+    padding-top: 20px;
 }
 .banner-btn{
     padding: 12px 20px;
@@ -187,10 +194,12 @@ h2{
     border-radius: 8px;
 }
 .banner-img{
+    padding-top: 160px;
+    padding-bottom: 160px;
     object-fit: cover;
     background-image: url(background/New-official-website_v2_首圖.png);
-    background-position: left 20% bottom 54%;
-    background-size: 100%;
+    background-position: center right;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -200,12 +209,12 @@ h2{
     flex-shrink: 0;
 }
 
-/* world */
+/* world-map */
 .world-img{
     height: 720px;
     background-image: url(background/New-official-website_v2_country.png);
     background-position: center;
-    background-size: 120%;
+    background-size: 100%;
     object-fit: cover;
 }
 .world-text{
@@ -213,7 +222,7 @@ h2{
     font-weight: 400;
     color: rgb(51, 51, 51);
     text-align: center;
-    padding-top: 200px;
+    padding-top: 120px;
 }
 
 .section-text{
@@ -243,6 +252,26 @@ h2{
     margin-bottom: 10px;
 }
 
+.top-bg-img{
+    width: 100%;
+    object-fit: cover;
+    background-image: url(background/New-official-website_v2_hp_background1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+}
+.center-bg-img{
+    width: 100%;
+    object-fit: cover;
+    background-image: url(background/New-official-website_v2_hp_background2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 80px;
+}
+
+/* partner */
 .partner-text{
     margin-top: 100px;
     margin-bottom: 100px;
@@ -252,33 +281,45 @@ h2{
     text-align: center;
 }
 .partner-nav{
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     border-bottom: 1px solid rgb(240, 242, 247);
 }
 .partner-tab{
-    padding: 12px 8px;
-}
-.partner-tab a{
     padding: 14px 20px;
+    margin-bottom: 4px;
     font-size: 16px;
     font-weight: 400;
+    line-height: 30.4px;
     color: rgb(102, 102, 102);
+    background-color: white;
+    border: 0;
 }
-.partner-tab a:hover{
+.partner-tab:hover{
     color: rgb(37, 41, 50);
+    cursor: pointer;
 }
-.active{
+.partner-tab.active{
+    margin-bottom: 0;
     color: rgb(37, 41, 50);
     border-bottom: 4px solid rgb(255, 110, 6);
 }
 .partner-logo{
-    padding: 2px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.logo-box{
+    width: calc(100% / 6);
+    height: 160px;
 }
 .partner-logo img{
     width: 180px;
-    transition: transform 0.3s ease;
+    transition: 0.35s ease-in-out;
 }
 .partner-logo img:hover{
     width: 190px;
@@ -408,24 +449,7 @@ select{
 .border-left{
     border-left: 1px solid rgb(203, 209, 220);
 }
-.top-bg-img{
-    width: 100%;
-    object-fit: cover;
-    background-image: url(background/New-official-website_v2_hp_background1.png);
-    background-position: top 500% center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 20px;
-}
-.center-bg-img{
-    width: 100%;
-    object-fit: cover;
-    background-image: url(background/New-official-website_v2_hp_background2.png);
-    background-position: top 120% right -20%;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    padding-top: 80px;
-}
+
 .bottom-bg-img{
     object-fit: cover;
     background-image: url("background/New-official-website_v2_form_background.png");

@@ -584,40 +584,9 @@ address{
     gap: 24px;
 }
 
-.facebook{
-    width: 21px;
-    height: 21px;
-    background-image: url(img/official/facebook.svg);
-    background-repeat: no-repeat;
+.website{
+    color: rgb(158, 166, 183);
 }
-.instagram{
-    width: 21px;
-    height: 21px;
-    background-image: url(img/official/instagram.svg);
-    background-repeat: no-repeat;
-}
-.youtube{
-    width: 21px;
-    height: 21px;
-    background-image: url(img/official/youtube.svg);
-    background-repeat: no-repeat;
-}
-.medium{
-    width: 21px;
-    height: 21px;
-    background-image: url(img/official/medium.svg);
-    background-repeat: no-repeat;
-}
-
-.facebook:hover{
-    background-image: url(img/official/facebook_hover.svg);
-}
-.instagram:hover{
-    background-image: url(img/official/instagram_hover.svg);
-}
-.youtube:hover{
-    background-image: url(img/official/youtube_hover.svg);
-}
-.medium:hover{
-    background-image: url(img/official/medium_hover.svg);
+.website:hover{
+    color: rgb(236, 99, 55);
 }

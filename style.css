@@ -160,18 +160,14 @@ nav{
 /* banner */
 .banner{
     margin: 0 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.banner p{
-    color: rgb(89, 89, 89);
-}
-.banner-text{
     text-wrap: nowrap;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 60px;
+}
+.banner p{
+    color: rgb(89, 89, 89);
 }
 .banner-btn{
     padding: 12px 20px;
@@ -186,16 +182,15 @@ nav{
     padding-bottom: 100px;
     object-fit: cover;
     background-image: url(background/New-official-website_v2_首圖.png);
-    background-position: center right;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 
-
 /* world-map */
 .world-img{
-    height: 720px;
+    height: 585px;
     background-image: url(background/New-official-website_v2_country.png);
     background-position: center;
     background-size: 100%;
@@ -203,7 +198,6 @@ nav{
     object-fit: cover;
 }
 .world-text{
-    margin: 0 20px;
     font-size: 16px;
     font-weight: 400;
     color: rgb(51, 51, 51);

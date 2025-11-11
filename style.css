@@ -176,6 +176,7 @@ nav{
     color: #fff;
     border: 0;
     border-radius: 8px;
+    cursor: pointer;
 }
 .banner-img{
     padding-top: 100px;

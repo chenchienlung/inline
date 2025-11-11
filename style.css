@@ -182,7 +182,6 @@ nav{
 .banner-img{
     padding-top: 100px;
     padding-bottom: 100px;
-    object-fit: cover;
     background-image: url(background/New-official-website_v2_首圖.png);
     background-position: center;
     background-size: cover;
@@ -195,7 +194,7 @@ nav{
     height: 585px;
     background-image: url(background/New-official-website_v2_country.png);
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     object-fit: cover;
 }
@@ -430,8 +429,6 @@ select{
 
 /* background-img */
 .top-bg-img{
-    width: 100%;
-    object-fit: cover;
     background-image: url(background/New-official-website_v2_hp_background1.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -439,12 +436,10 @@ select{
     padding-top: 20px;
 }
 .center-bg-img{
-    width: 100%;
-    object-fit: cover;
     background-image: url(background/New-official-website_v2_hp_background2.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     padding-top: 80px;
 
     display: flex;
@@ -452,11 +447,10 @@ select{
     gap: 120px;
 }
 .bottom-bg-img{
-    object-fit: cover;
     background-image: url("background/New-official-website_v2_form_background.png");
-    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     padding-bottom: 40px;
 }
 

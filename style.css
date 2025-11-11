@@ -11,6 +11,10 @@ p{
     line-height: 30.4px;
 }
 
+button{
+    cursor: pointer;
+}
+
 .container{
     width: 1200px;
     margin: 0 auto;
@@ -137,7 +141,6 @@ nav{
     flex-direction: row;
     align-items: center;
     gap: 8px;
-    cursor: pointer;
 }
 .btn-red img{
     height: 40px;
@@ -180,7 +183,6 @@ nav{
     color: #fff;
     border: 0;
     border-radius: 8px;
-    cursor: pointer;
 }
 .banner-img{
     padding-top: 100px;
@@ -266,7 +268,6 @@ nav{
 }
 .partner-tab:hover{
     color: rgb(37, 41, 50);
-    cursor: pointer;
 }
 .partner-tab.active{
     margin-bottom: 0;
@@ -363,7 +364,6 @@ select{
 select:hover{
     outline: 0;
     background-color: rgb(250, 250, 250);
-    cursor: pointer;
 }
 select:focus{
     outline: 0;
@@ -558,7 +558,6 @@ address{
 }
 .language:hover{
     color: rgb(255, 110, 6);
-    cursor: pointer;
 }
 .language-disabled{
     color: black;
@@ -569,6 +568,7 @@ address{
     line-height: 30.4px;
     text-decoration: none;
     padding-left: 0;
+    cursor: default;
 }
 .official{
     color: rgb(227, 230, 237);

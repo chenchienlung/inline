@@ -360,6 +360,7 @@ select{
     color: rgba(0, 0, 0, .25);
     border: 1px solid rgb(221, 221, 221);
     border-radius: 4px;
+    cursor: pointer;
 }
 select:hover{
     outline: 0;
@@ -367,6 +368,9 @@ select:hover{
 }
 select:focus{
     outline: 0;
+}
+.g-recaptcha{
+    width: 100%;
 }
 .form-submit{
     padding: 14px 60px;
